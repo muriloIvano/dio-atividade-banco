@@ -1,5 +1,11 @@
 public class Banco {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    private String Nome;
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String nome) {
+        Nome = nome;
     }
 }
