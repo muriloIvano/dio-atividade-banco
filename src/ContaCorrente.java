@@ -1,9 +1,13 @@
 
 public class ContaCorrente extends Conta {
 
-    public void exibirExtrato() {
-        System.out.println("=== Extrato da Conta Corrente ===");
-        super.dados();
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
+    }
+
+    public void imprimirExtrato() {
+        System.out.println("=== Extrato Conta Corrente ===");
+        super.imprimirInfosComuns();
     }
 
 }
